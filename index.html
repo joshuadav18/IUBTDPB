@@ -2,58 +2,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de registro</title>
     <link rel="stylesheet" href="style.css">
+    <title>Deporte - Mi Página Web</title>
 </head>
 
 <body>
-<h2>Formulario de Registro</h2>
-<form action="#" method="post">
 
-    <fieldset>
-        <legend>Información Personal</legend>
+    <h1>Historia del Deporte</h1>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"
-               required minlength="3" maxlength="30">
+   
+    <h2>Introducción</h2>
+    <p>
+    La historia del deporte se remonta a la prehistoria (33.000 a.C.), evolucionando de actividades de supervivencia y rituales a disciplinas reglamentadas. Desde los primeros Juegos Olímpicos en Grecia (776 a.C.) hasta su profesionalización y popularización masiva en los siglos XIX y XX, el deporte ha sido un reflejo de la cultura, la tecnología y el entrenamiento militar.
+    </p>
 
-        <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo"
-               required>
+    <h2>Que es el Deporte</h2>
+    <p>
+        El deporte es importante porque mejora la salud, fortalece el cuerpo
+        y ayuda a mantener una buena disciplina. Además, fomenta el trabajo
+        en equipo y la responsabilidad.
+    </p>
+    <h2>Deportes</h2>
+    <img src="deportes.jpg" alt="Imagen de deporte" width="300">
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password"
-               required minlength="6">
+    
+    <h2>Páginas Deportivas </h2>
+    <p>
+        <a href="https://www.espn.com" target="_blank">ESPN</a><br>
+        <a href="https://www.fifa.com" target="_blank">FIFA</a><br>
+        <a href="https://www.conmebol.com" target="_blank">CONMEBOL</a>
+    </p>
 
-        <label for="fecha">Fecha de Nacimiento:</label>
-        <input type="date" id="fecha" name="fecha"
-               required>
+    <h2> Lista De Deportes</h2>
+    <ul>
+        <li>Fútbol</li>
+        <li>Baloncesto</li>
+        <li>Gimnasio</li>
+    </ul>
 
-        <label for="telefono">Teléfono (10 dígitos):</label>
-        <input type="text" id="telefono" name="telefono"
-               pattern="[0-9]{10}"
-               placeholder="Ej: 1234567890"
-               required>
+    
+    <h2>Actividades Deportivas</h2>
+    <ol>
+        <li>Entrenar fútbol</li>
+        <li>Ir al gimnasio</li>
+        <li>Practicar tiros libres</li>
+    </ol>
 
-    </fieldset>
+    
+    <h2>Horario Deportivo Semanal</h2>
 
-    <fieldset>
-        <legend>Información Adicional</legend>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Actividad</th>
+            </tr>
+        </thead>
 
-        <label for="genero">Género:</label>
-        <select id="genero" name="genero" required>
-            <option value="">Seleccione una opción</option>
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">Otro</option>
-        </select>
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>Entrenar fútbol</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>Ir al gimnasio</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>Practicar tiros libres</td>
+            </tr>
+        </tbody>
+    </table>
 
-    </fieldset>
+    <h2>Formulario de Contacto</h2>
 
-    <button type="submit">Enviar</button>
-    <button type="reset">Borrar</button>
-</form>
+    <form>
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Motivo de contacto:</label><br>
+        <input type="text" name="motivo"><br><br>
+
+        <label>Correo electrónico:</label><br>
+        <input type="email" name="correo"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
 </body>
 </html>
